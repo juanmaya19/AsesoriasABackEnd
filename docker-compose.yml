@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+ asesorias-core:
+  container_name: 'asesorias-core'
+  image: juanmaya19/asesorias-core:v1
+  ports:
+   - "6000:3000"
+  networks:
+   - asesorias_core
+networks:
+ asesorias_core:
